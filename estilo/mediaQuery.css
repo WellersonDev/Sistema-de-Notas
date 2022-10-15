@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*Media Query*/
+
+/* 
+Typical Device Breakpoints
+--------------------------------
+Pequenas telas: até 600px
+Celular: 600px até 700px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+--------------------------------
+*/
+
+
+@media screen and (min-width: 768px) {
+    body section#btn {
+        max-width: 700px;
+    }
+
+    body section#calculo {
+        max-width: 700px;
+        overflow: hidden;
+    }
+
+    body section#calculo form div {
+        max-width: 83%;
+        overflow: hidden;
+    }
+
+    body section#calculo form div label {
+        display: inline-block;
+        align-items: center;
+    }
+
+    body section#calculo form div label#labelPortugues {
+        margin-right: 20px;
+    }
+
+    body section#calculo form div label#labelMatematica {
+        margin-right: 12.2px;
+    }
+
+    body section#calculo form div label#labelBiologia {
+        margin-right: 35px;
+    }
+
+    body section#calculo form div input {
+        display: inline-block;
+        width: 80px;
+    }
+
+    body section#calculo form div output {
+        margin-left: 70px;
+        width: 35px;
+        display: inline-block;
+    }
+
+    body section#calculo form div#calculaApaga {
+        display: flex;
+        max-width: 50%;
+    }
+
+    body section#resultado {
+        max-width: 700px;
+    }
+}

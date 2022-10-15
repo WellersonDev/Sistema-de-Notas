@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mediaQuery.css">
+    <link rel="stylesheet" href="estilo/modoDark.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Sistema de Notas</title>
+</head>
+
+<body modoDark>
+    <h1 modoDark>Sistema de Notas</h1>
+
+    <section id="btn" modoDark>
+        <span id="Claro" class="material-icons" onclick="modoClaro()" modoDark>wb_sunny</span>
+        <span id="Noturno" class="material-icons" onclick="modoNoturno()" modoDark>nightlight_round</span>
+    </section>
+
+    <section id="calculo" modoDark>
+
+        <input type="text" id="aluno" placeholder="Nome do aluno" modoDark>
+
+        <form action="cadastro.php" method="post">
+            <div modoDark>
+                <label id="labelPortugues" for="iPortugues">Português</label>
+                <input type="number" name="Portugues" id="iPortugues" placeholder="nota 01" oninput="isoma.innerHTML = ((Number(iPortugues.value) + Number(iPortugues02.value) + Number(iPortugues03.value) + Number(iPortugues04.value)) / 4).toFixed(1)" required modoDark>
+                <input type="number" name="Portugues" id="iPortugues02" placeholder="nota 02" oninput="isoma.innerHTML = ((Number(iPortugues.value) + Number(iPortugues02.value) + Number(iPortugues03.value) + Number(iPortugues04.value)) / 4).toFixed(1)"  required modoDark>
+                <input type="number" name="Portugues" id="iPortugues03" placeholder="nota 03" oninput="isoma.innerHTML = ((Number(iPortugues.value) + Number(iPortugues02.value) + Number(iPortugues03.value) + Number(iPortugues04.value)) / 4).toFixed(1)"  required modoDark>
+                <input type="number" name="Portugues" id="iPortugues04" placeholder="nota 04" oninput="isoma.innerHTML = ((Number(iPortugues.value) + Number(iPortugues02.value) + Number(iPortugues03.value) + Number(iPortugues04.value)) / 4).toFixed(1)" required modoDark>
+                <output id="isoma" modoDark>0</output>
+            </div>
+
+            <div modoDark>
+                <label id="labelMatematica" for="iMatematica">Matematica</label>
+                <input type="number" name="Matematica" id="iMatematica" placeholder="nota 01" oninput="isomaMatematica.innerHTML = ((Number(iMatematica.value) + Number(iMatematica02.value) + Number(iMatematica03.value) + Number(iMatematica04.value)) / 4).toFixed(1)" required modoDark>
+                <input type="number" name="Matematica" id="iMatematica02" placeholder="nota 02" oninput="isomaMatematica.innerHTML = ((Number(iMatematica.value) + Number(iMatematica02.value) + Number(iMatematica03.value) + Number(iMatematica04.value)) / 4).toFixed(1)" required modoDark>
+                <input type="number" name="Matematica" id="iMatematica03" placeholder="nota 03" oninput="isomaMatematica.innerHTML = ((Number(iMatematica.value) + Number(iMatematica02.value) + Number(iMatematica03.value) + Number(iMatematica04.value)) / 4).toFixed(1)" required modoDark>
+                <input type="number" name="Matematica" id="iMatematica04" placeholder="nota 04" oninput="isomaMatematica.innerHTML = ((Number(iMatematica.value) + Number(iMatematica02.value) + Number(iMatematica03.value) + Number(iMatematica04.value)) / 4).toFixed(1)" required modoDark>
+                <output id="isomaMatematica" modoDark>0</output>
+            </div>
+            
+            <div modoDark>
+                <label id="labelBiologia" for="iBiologia">Biologia</label>
+                <input type="number" name="Biologia" id="iBiologia" placeholder="nota 01" oninput="isomaBiologia.innerHTML = ((Number(iBiologia.value) + Number(iBiologia02.value) + Number(iBiologia03.value) + Number(iBiologia04.value)) / 4).toFixed(1)" required modoDark>
+                <input type="number" name="Biologia" id="iBiologia02" placeholder="nota 02" oninput="isomaBiologia.innerHTML = ((Number(iBiologia.value) + Number(iBiologia02.value) + Number(iBiologia03.value) + Number(iBiologia04.value)) / 4).toFixed(1)" required modoDark>
+                <input type="number" name="Biologia" id="iBiologia03" placeholder="nota 03" oninput="isomaBiologia.innerHTML = ((Number(iBiologia.value) + Number(iBiologia02.value) + Number(iBiologia03.value) + Number(iBiologia04.value)) / 4).toFixed(1)" required modoDark>
+                <input type="number" name="Biologia" id="iBiologia04" placeholder="nota 04" oninput="isomaBiologia.innerHTML = ((Number(iBiologia.value) + Number(iBiologia02.value) + Number(iBiologia03.value) + Number(iBiologia04.value)) / 4).toFixed(1)" required modoDark>
+                <output id="isomaBiologia" modoDark>0</output>
+            </div>
+
+            <div id="apaga">
+                <input type="reset" value="Apagar" modoDark>
+            </div>
+        </form>
+
+        
+    </section>
+
+    <section id="resultado" modoDark>
+        <p id="tituloResposta" modoDark>Resultado Final</p>
+        <p class="sit"></p>
+        <img src="" class="fotoresultado" alt="">
+
+        <input type="button" id="final" value="Ver Resultado" onclick="resultadoFinal()" modoDark>
+    </section>
+    <p id="nome" modoDark>Desenvolvido por: wellersonpro</p>
+    <p id="creditos" name="conjunto" modoDark>Photo dark mod by: <a href="https://unsplash.com/@gradienta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" modoDark>Gradienta</a> on <a href="https://unsplash.com/s/photos/background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" modoDark>Unsplash</a></p>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

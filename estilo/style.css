@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+/*
+font-family: 'Merienda', cursive;
+font-family: 'Kanit', sans-serif;
+*/
+
+/*===============Versão Mobile First===============*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merienda:wght@400;700&display=swap');
+
+:root {
+
+    /* CORES DARK */
+    --cor01: #371B58;
+    --cor02: #7858a6a1;
+
+    /* CORES LIGHT */
+    --cor03: #CECAC4;
+    --cor04: #545454;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../imagens/wallpaper004.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5px;
+}
+
+h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+section#btn {
+    background-color: var(--cor03);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    /*border-radius: 15px;*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+
+section#btn span {
+    background-color: var(--cor04);
+    margin-left: 8px;
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid var(--cor04);
+    cursor: pointer;
+}
+
+section#btn span#Noturno:hover {
+    background-color: white;
+    color: var(--cor01);
+    border: 1px solid white;
+    transition: background-color .4s, color .4s, border .4s;
+}
+
+section#btn span#Claro:hover {
+    background-color: white;
+    color: rgb(184, 184, 2);
+    border: 1px solid white;
+    transition: background-color .4s, color .4s, border .4s;
+}
+
+input#aluno {
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+}
+
+section#calculo input#aluno:focus {
+    outline: none;
+}
+
+section#calculo {
+    background-color: var(--cor03);
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+
+section#calculo form div#apaga {
+    background-color: transparent;
+}
+
+section#calculo form div#apaga input {
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    padding: 10px;
+    background-color: var(--cor04);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+section#calculo form div {
+    background-color: var(--cor04);
+    max-width: 80vw;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+section#calculo form div label {
+    display: block;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+section#calculo form div input {
+    display: block;
+    margin: 2px auto;
+    max-width: 80%;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px;
+    border: none;
+}
+
+section#calculo form div output {
+    /*background-color: skyblue;*/
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+section#calculo form div input:focus {
+    outline: 0px;
+}
+
+section#resultado {
+    background-color: var(--cor03);
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+
+section#resultado p#tituloResposta {
+    font-size: 18px;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+}
+
+section#resultado input {
+    display: block;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: var(--cor04);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+section#resultado p#apv {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+section#resultado p#apv p {
+    display: inline;
+    background-color: green;
+    padding: 3px;
+}
+
+section#resultado p#rec {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+section#resultado p#rec p {
+    display: inline;
+    background-color: yellow;
+    padding: 3px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
+}
+
+section#resultado p#rep {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+section#resultado p#rep p {
+    display: inline;
+    background-color: red;
+    padding: 3px;
+}
+
+section#resultado p#aviso {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+img {
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+p#nome {
+    text-align: center;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+p#creditos {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p#creditos a {
+    text-decoration: none;
+}
+
+p#creditos a:hover {
+    text-decoration: underline;
+}
+/*=================================================*/

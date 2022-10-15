@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+:root {
+
+    /* CORES DARK */
+    --cor00: #751a4b;
+    --cor01: #371B58;
+    --cor02: #7858a6a1;
+
+    /* CORES LIGHT */
+    --cor03: #CECAC4;
+    --cor04: #545454;
+}
+
+/*Estilo do Modo Dark*/
+
+body.dark01 {
+    background-image: url('../imagens/gradienta-m_7p45JfXQo-unsplash.jpg');
+}
+
+.dark02 {
+    color: white;
+}
+
+section#btn.dark03 {
+    background-color: var(--cor02);
+}
+
+section#btn span#dark04 {
+    background-color: var(--cor01);
+    border: 1px solid var(--cor01);
+}
+
+section#btn span#dark04:hover {
+    background-color: white;
+    color: rgb(184, 184, 2);
+    border: 1px solid white;
+    transition: background-color .4s, color .4s, border .4s;
+}
+
+section#btn span#dark05 {
+    background-color: var(--cor01);
+    border: 1px solid var(--cor01);
+}
+
+section#btn span#dark05:hover {
+    background-color: white;
+    color: var(--cor01);
+    border: 1px solid white;
+    transition: background-color .4s, color .4s, border .4s;
+}
+
+section#calculo.dark06 {
+    background-color: var(--cor02);
+}
+
+section#calculo input.dark07 {
+    background-color: var(--cor00);
+    color: white;
+}
+
+section#calculo input.dark07::placeholder {
+    color: white;
+}
+
+section#calculo div.dark08 {
+    background-color: var(--cor01);
+}
+
+section#calculo div#apaga input.dark09 {
+    background-color: var(--cor01);
+}
+
+section#resultado.dark10 {
+    background-color: var(--cor02);
+}
+
+section#resultado input.dark11 {
+    background-color: var(--cor01);
+}
+
+p#nome.dark12 {
+    color: white;
+}
+
+.dark13 {
+    color: var(--cor00);
+    font-weight: bolder;
+}
