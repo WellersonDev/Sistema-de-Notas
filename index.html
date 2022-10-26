@@ -52,6 +52,15 @@
                 <output id="isomaBiologia" modoDark>0</output>
             </div>
 
+            <div modoDark>
+                <label id="labelHistoria" for="iHistoria">História</label>
+                <input type="number" name="Historia" id="iHistoria" placeholder="nota 01" oninput="isomaHistoria.innerHTML = ((Number(iHistoria.value) + Number(iHistoria02.value) + Number(iHistoria03.value) + Number(iHistoria04.value)) / 4).toFixed(1)" required modoDark>
+                <input type="number" name="Historia" id="iHistoria02" placeholder="nota 02" oninput="isomaHistoria.innerHTML = ((Number(iHistoria.value) + Number(iHistoria02.value) + Number(iHistoria03.value) + Number(iHistoria04.value)) / 4).toFixed(1)" required modoDark>
+                <input type="number" name="Historia" id="iHistoria03" placeholder="nota 03" oninput="isomaHistoria.innerHTML = ((Number(iHistoria.value) + Number(iHistoria02.value) + Number(iHistoria03.value) + Number(iHistoria04.value)) / 4).toFixed(1)" required modoDark>
+                <input type="number" name="Historia" id="iHistoria04" placeholder="nota 04" oninput="isomaHistoria.innerHTML = ((Number(iHistoria.value) + Number(iHistoria02.value) + Number(iHistoria03.value) + Number(iHistoria04.value)) / 4).toFixed(1)" required modoDark>
+                <output id="isomaHistoria" modoDark>0</output>
+            </div>
+
             <div id="apaga">
                 <input type="reset" value="Apagar" modoDark>
             </div>

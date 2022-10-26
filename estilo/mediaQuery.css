@@ -46,6 +46,10 @@ Grandes telas: acima de 1200px
         margin-right: 35px;
     }
 
+    body section#calculo form div label#labelHistoria {
+        margin-right: 35px;
+    }
+
     body section#calculo form div input {
         display: inline-block;
         width: 80px;

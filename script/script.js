@@ -6,7 +6,7 @@ function modoNoturno() {
     tags[0].removeAttribute('class');
     tags[3].removeAttribute('id');
     tags[4].removeAttribute('id');
-    tags[25].removeAttribute('class');
+   /*tags[25].removeAttribute('class');*/
     tags[26].removeAttribute('class');
 
     /*Atribuindo classes e ids com estilo de modo Dark.*/
@@ -32,14 +32,22 @@ function modoNoturno() {
     tags[21].setAttribute('class', 'dark07');
     tags[22].setAttribute('class', 'dark07');
     tags[23].setAttribute('class', 'dark07');
-    tags[25].setAttribute('class', 'dark09');
-    tags[26].setAttribute('class', 'dark10');
-    tags[27].setAttribute('class', 'dark02');
-    tags[28].setAttribute('class', 'dark11');
-    tags[29].setAttribute('class', 'dark12');
-    tags[30].setAttribute('class', 'dark02');
-    tags[31].setAttribute('class', 'dark13');
-    tags[32].setAttribute('class', 'dark13');
+    tags[25].setAttribute('class', 'dark08'); /* Historia */
+    tags[26].setAttribute('class', 'dark07');
+    tags[27].setAttribute('class', 'dark07');
+    tags[28].setAttribute('class', 'dark07');
+    tags[29].setAttribute('class', 'dark07');
+    tags[30].setAttribute('class', 'dark02'); /* ======= */
+    tags[31].setAttribute('class', 'dark09');
+    tags[32].setAttribute('class', 'dark10');
+    tags[33].setAttribute('class', 'dark02');
+    tags[34].setAttribute('class', 'dark11');
+    tags[35].setAttribute('class', 'dark12');
+    tags[36].setAttribute('class', 'dark02');
+    tags[37].setAttribute('class', 'dark13');
+    tags[38].setAttribute('class', 'dark13');
+
+    console.log(tags);
 }
 
 function modoClaro() {
@@ -75,6 +83,13 @@ function modoClaro() {
     tags[30].removeAttribute('class');
     tags[31].removeAttribute('class');
     tags[32].removeAttribute('class');
+    tags[33].removeAttribute('class');
+    tags[34].removeAttribute('class');
+    tags[35].removeAttribute('class');
+    tags[35].removeAttribute('class');
+    tags[36].removeAttribute('class');
+    tags[37].removeAttribute('class');
+    tags[38].removeAttribute('class');
 
     tags[3].setAttribute('id', 'Claro');
     tags[4].setAttribute('id', 'Noturno');
