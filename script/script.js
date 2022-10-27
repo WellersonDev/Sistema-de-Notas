@@ -100,11 +100,12 @@ function resultadoFinal() {
     let mediaPortugues = document.querySelector('output#isoma').value; /*Variável que recebe a média de português.*/
     let mediaMatematica = document.querySelector('output#isomaMatematica').value; /*Variável que recebe a média de matematica.*/
     let mediaBiologia = document.querySelector('output#isomaBiologia').value; /*Variável que recebe a média de biologia*/
+    let mediaHistoria = document.querySelector('output#isomaHistoria').value /*Variável que recebe a média de historia*/
 
     let img = document.querySelector('img.fotoresultado') // Tag imagem vazia.
     let p = document.querySelector('p.sit'); // Campo de texto da situação do aluno.
 
-    if(mediaPortugues > 10 || mediaMatematica > 10 || mediaBiologia > 10) {
+    if(mediaPortugues > 10 || mediaMatematica > 10 || mediaBiologia > 10 || mediaHistoria > 10) {
         img.removeAttribute('src');
         p.removeAttribute('id');
         p.setAttribute('id', 'aviso');
@@ -112,7 +113,7 @@ function resultadoFinal() {
         p.innerHTML = `Medias não podem ser maior que 10!.`
     }
     
-    else if(mediaPortugues >= 5 && mediaPortugues < 7 && mediaMatematica >= 7 && mediaMatematica <= 10 && mediaBiologia >= 7 && mediaBiologia <= 10 || mediaPortugues >= 7 && mediaPortugues < 10 && mediaMatematica >= 5 && mediaMatematica < 7 && mediaBiologia >= 7 && mediaBiologia <= 10 || mediaPortugues >= 7 && mediaPortugues < 10 && mediaMatematica >= 7 && mediaMatematica <= 10 && mediaBiologia >= 5 && mediaBiologia < 7) {
+    else if(mediaPortugues >= 5 && mediaPortugues < 7 && mediaMatematica >= 7 && mediaMatematica <= 10 && mediaBiologia >= 7 && mediaBiologia <= 10 && mediaHistoria >= 7 && mediaHistoria <= 10 || mediaPortugues >= 7 && mediaPortugues <= 10 && mediaMatematica >= 5 && mediaMatematica < 7 && mediaBiologia >= 7 && mediaBiologia <= 10 && mediaHistoria >= 7 && mediaHistoria <= 10|| mediaPortugues >= 7 && mediaPortugues <= 10 && mediaMatematica >= 7 && mediaMatematica <= 10 && mediaBiologia >= 5 && mediaBiologia < 7 && mediaHistoria >= 7 && mediaHistoria <= 10 || mediaPortugues >= 7 && mediaPortugues <= 10 && mediaMatematica >= 7 && mediaMatematica <= 10 && mediaBiologia >= 7 && mediaBiologia <= 10 && mediaHistoria >= 5 && mediaHistoria < 7) {
         img.removeAttribute('src');
         img.setAttribute('src', 'imagens/recuperacao.png');
         p.removeAttribute('id');
@@ -121,7 +122,7 @@ function resultadoFinal() {
         p.innerHTML = `Aluno(a) ${aluno} em <p>RECUPERAÇÃO</p>.`
     }
 
-    else if(mediaPortugues >= 7 && mediaPortugues <= 10 && mediaMatematica < 7 && mediaBiologia < 7 || mediaPortugues < 7 && mediaMatematica >= 7 && mediaMatematica <= 10 && mediaBiologia < 7 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia >= 7 && mediaBiologia <= 10 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia < 7 || mediaPortugues < 5 || mediaMatematica < 5 || mediaBiologia < 5) {
+    else if(mediaPortugues >= 7 && mediaPortugues <= 10 && mediaMatematica < 7 && mediaBiologia < 7 && mediaHistoria < 7 || mediaPortugues < 7 && mediaMatematica >= 7 && mediaMatematica <= 10 && mediaBiologia < 7 && mediaHistoria < 7 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia >= 7 && mediaBiologia <= 10 && mediaHistoria < 7 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia < 7 && mediaHistoria >= 7 && mediaHistoria <= 10 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia < 7 && mediaHistoria < 7|| mediaPortugues < 5 || mediaMatematica < 5 || mediaBiologia < 5 || mediaHistoria < 5) {
         img.removeAttribute('src');
         img.setAttribute('src', 'imagens/reprovado.png');
         p.removeAttribute('id');
@@ -130,7 +131,7 @@ function resultadoFinal() {
         p.innerHTML = `Aluno(a) ${aluno} <p>REPROVADO</p>.`
     }
 
-    else if(mediaPortugues >= 7 && mediaPortugues <= 10 && mediaMatematica >= 7 && mediaMatematica<= 10 && mediaBiologia >= 7 && mediaBiologia <= 10) {
+    else if(mediaPortugues >= 7 && mediaPortugues <= 10 && mediaMatematica >= 7 && mediaMatematica <= 10 && mediaBiologia >= 7 && mediaBiologia <= 10 && mediaHistoria >= 7 && mediaHistoria <= 10) {
         img.removeAttribute('src');
         img.setAttribute('src', 'imagens/aprovado.png');
         p.removeAttribute('id');
