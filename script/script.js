@@ -122,7 +122,7 @@ function resultadoFinal() {
         p.innerHTML = `Aluno(a) ${aluno} em <p>RECUPERAÇÃO</p>.`
     }
 
-    else if(mediaPortugues >= 7 && mediaPortugues <= 10 && mediaMatematica < 7 && mediaBiologia < 7 && mediaHistoria < 7 || mediaPortugues < 7 && mediaMatematica >= 7 && mediaMatematica <= 10 && mediaBiologia < 7 && mediaHistoria < 7 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia >= 7 && mediaBiologia <= 10 && mediaHistoria < 7 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia < 7 && mediaHistoria >= 7 && mediaHistoria <= 10 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia < 7 && mediaHistoria < 7|| mediaPortugues < 5 || mediaMatematica < 5 || mediaBiologia < 5 || mediaHistoria < 5) {
+    else if(mediaPortugues >= 7 && mediaPortugues <= 10 && mediaMatematica < 7 && mediaBiologia < 7 && mediaHistoria < 7 || mediaPortugues < 7 && mediaMatematica >= 7 && mediaMatematica <= 10 && mediaBiologia < 7 && mediaHistoria < 7 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia >= 7 && mediaBiologia <= 10 && mediaHistoria < 7 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia < 7 && mediaHistoria >= 7 && mediaHistoria <= 10 || mediaPortugues < 7 && mediaMatematica < 7 && mediaBiologia < 7 && mediaHistoria < 7|| mediaPortugues < 5 || mediaMatematica < 5 || mediaBiologia < 5 || mediaHistoria < 5 || mediaPortugues < 7 && mediaMatematica < 7 || mediaPortugues < 7 && mediaBiologia < 7 || mediaPortugues < 7 && mediaHistoria < 7 || mediaMatematica < 7 && mediaBiologia < 7 || mediaMatematica < 7 && mediaHistoria < 7 || mediaBiologia < 7 && mediaHistoria < 7 ) {
         img.removeAttribute('src');
         img.setAttribute('src', 'imagens/reprovado.png');
         p.removeAttribute('id');
